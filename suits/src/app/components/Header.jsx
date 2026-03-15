@@ -7,9 +7,9 @@ function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return ( 
-        <header className="bg-[#18362C] text-white flex justify-between items-center px-6 md:px-20 py-5 sticky top-0 z-[100]">
+        <header className="bg-[#18362C] text-white flex justify-between text-shadow-lg/10 items-center px-6 md:px-20 py-5 sticky top-0 z-[100]">
             <h1 className="text-2xl md:text-3xl text-[#D2B68A] font-[family-name:var(--font-cinzel)] z-[110]">
-                AURUM
+                <Link href="/"> AURUM </Link> 
             </h1>
 
             <nav className="hidden md:flex gap-10 lg:gap-15 text-[16px] font-medium tracking-wide">

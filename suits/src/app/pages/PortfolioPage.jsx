@@ -7,7 +7,7 @@ function Portfolio() {
                 
                 <div className="flex-1 relative w-full aspect-square md:aspect-auto md:h-[500px] lg:h-[600px] order-1">
                     <Image 
-                        src="/Image.png" 
+                        src="/Image.jpeg" 
                         alt="Bespoke process"
                         fill 
                         className="object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700"

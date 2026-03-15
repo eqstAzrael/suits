@@ -1,4 +1,6 @@
+import Image from "next/image";
 import suits from "../suits.js";
+
 
 function Assortment() {
     return ( 
@@ -11,13 +13,13 @@ function Assortment() {
                     {suits.map((suit) => (
                         <article key={suit.id} className="flex flex-col  group cursor-pointer gap-3">
                             <div className="aspect-[3/4] bg-stone-300 mb-6 overflow-hidden relative">
-                                {/* <Image src={suit.image} fill className="object-cover group-hover:scale-105 transition-transform duration-700" /> */}
+                                <Image src={suit.image} fill className="object-cover group-hover:scale-105 transition-transform duration-700" />
                             </div>
                             <h3 className="text-xl font-[family-name:var(--font-cinzel)] mb-2 tracking-tighter">
                                 {suit.name}
                             </h3>
                             <p className="text-sm tracking-[0.2em] uppercase opacity-60">
-                                {suit.price}
+                                {suit.price + "$"}
                             </p>
                             <button className="bg-[#18362C] hover:text-[#D2B68A] transition-colors h-12 text-white">BUY</button>
                         </article>
